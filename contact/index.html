@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.png">
+
+    <title>Natural Anthem</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href="../css/burger.css" rel="stylesheet">
+    <link href="../css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link href='//fonts.googleapis.com/css?family=Cousine' rel='stylesheet' type='text/css'>
+
+
+
+
+</head>
+
+<body>
+    <navbar>
+        <!-- Navigation -->
+          <div class="mobilenav">
+            <li><a href="../">news</a></li>
+            <li><a href='../shows/'>shows</a></li>
+            <li><a href="../music/">music</a></li>
+            <li><a href="//naturalanthem.bigcartel.com/">store</a></li>
+            <li ><a href='../about/'>about</a></li>
+            <li class='active'><span>contact</span></li>
+        </div>
+
+        <a href="javascript:void(0)" class="icon">
+            <div class="hamburger">
+                <div class="menui top-menu"></div>
+                <div class="menui mid-menu"></div>
+                <div class="menui bottom-menu"></div>
+            </div>
+        </a>
+    </navbar>
+<body>
+        <div class='header'>
+            <span>natural anthem</span>
+        </div>
+
+        <div class="container main">
+                <div class="container contact text-center">
+        <div class="form-group">
+
+            <div class="submitstatus text-center">
+                <!-- Hidden message to show if contact is successful. -->
+                <div id="submit-success" class="collapse">
+                    message sent
+                    <br>
+                    <input class="btn btn-contact" value="send another?" id="send-another" />
+                </div>
+
+                <!-- Hidden message to show if user encounters errors. -->
+                <div id="submit-error" class="collapse">
+                    error! try again later
+                </div>
+            </div>
+            <form class="contactform">
+                <div class="form-group">
+                    <label for="name" class="pull-left">name</label>
+                    <input type="text" name="name" required placeholder="name" class="form-control input-lg" />
+                </div>
+
+                <div class="form-group">
+                    <label for="email" class="pull-left">email</label>
+                    <input type="email" name="_replyto" required email placeholder="email@address.com" class="form-control input-lg" /> </div>
+
+                <input type="text" name="_gotcha" style="display:none" class="form-control" />
+
+                <div class="form-group">
+                    <label for="subject" class="pull-left">subject</label>
+                    <input type="text" name="subject" required placeholder="subject" class="form-control input-lg" /> </div>
+                <div class="form-group">
+                    <label for="message" class="pull-left">message</label>
+                    <textarea name="message" placeholder="message" required rows="6" class="form-control input-lg"></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="send" class="btn pull-left btn-contact" />
+                </div>
+
+            </form>
+        </div>
+    </div>
+        </div>
+
+        <div class='container footer'>
+            <ul class='social'>
+                <li><a href="//instagram.com/naturalanthem_"><i class="fa fa-instagram fa-2x"></i></a></li>
+                <li><a href="//facebook.com/ntrlanthem"><i class='fa fa-facebook fa-2x'></i></a></li>
+                <li><a href='//www.youtube.com/channel/UCdhXY53EPegC2J1unMka3Rg'><i class='fa fa-youtube fa-2x'></i></a></li>
+                <li> <a href='//www.twitter.com/naturalanthem_'><i class='fa fa-twitter fa-2x'></i></a></li>
+            </ul>
+        </div>
+    </body>
+
+
+
+
+
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+        <script src="../js/burger.js"></script>
+    
+    <script type="text/javascript">
+$(document).ready(function(){
+	$(".btn").click(function(){
+		$("#myModal").modal('show');
+	});
+});
+</script>
+
+
+
+
+
+
+</body>
+
+</html>
