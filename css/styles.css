@@ -51,7 +51,7 @@
     background: yellow;
     border-style: none;
     border-radius: 2px;
-    padding: 10px
+    height: 32px
 }
 .yellow:hover {
     background: black;

@@ -11,7 +11,7 @@
     <title>Natural Anthem</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link href="../css/burger.css" rel="stylesheet">
     <link href="../css/styles.css" rel="stylesheet">
@@ -26,12 +26,12 @@
 <body>
     <navbar>
         <!-- Navigation -->
-          <div class="mobilenav">
+        <div class="mobilenav">
             <li><a href="../">news</a></li>
             <li><a href='../shows/'>shows</a></li>
             <li><a href="../music/">music</a></li>
             <li><a href="//naturalanthem.bigcartel.com/">store</a></li>
-            <li ><a href='../about/'>about</a></li>
+            <li><a href='../about/'>about</a></li>
             <li class='active'><span>contact</span></li>
         </div>
 
@@ -43,54 +43,55 @@
             </div>
         </a>
     </navbar>
-<body>
+
+    <body>
         <div class='header'>
             <span>natural anthem</span>
         </div>
 
         <div class="container main">
-                <div class="contact text-center">
-        <div class="form-group">
+            <div class="contact text-center">
+                <div class="form-group">
 
-            <div class="submitstatus text-center">
-                <!-- Hidden message to show if contact is successful. -->
-                <div id="submit-success" class="collapse">
-                    message sent
-                    <br>
-                    <input class="btn btn-contact" value="send another?" id="send-another" />
-                </div>
+                    <div class="submitstatus text-center">
+                        <!-- Hidden message to show if contact is successful. -->
+                        <div id="submit-success" class="collapse">
+                            message sent
+                            <br>
+                            <input class="btn btn-contact" value="send another?" id="send-another" />
+                        </div>
 
-                <!-- Hidden message to show if user encounters errors. -->
-                <div id="submit-error" class="collapse">
-                    error! try again later
+                        <!-- Hidden message to show if user encounters errors. -->
+                        <div id="submit-error" class="collapse">
+                            error! try again later
+                        </div>
+                    </div>
+                    <form class="contactform">
+                        <div class="form-group">
+                            <label for="name" class="pull-left">name</label>
+                            <input type="text" name="name" required placeholder="name" class="form-control input-lg" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="pull-left">email</label>
+                            <input type="email" name="_replyto" required email placeholder="email@address.com" class="form-control input-lg" /> </div>
+
+                        <input type="text" name="_gotcha" style="display:none" class="form-control" />
+
+                        <div class="form-group">
+                            <label for="subject" class="pull-left">subject</label>
+                            <input type="text" name="subject" required placeholder="subject" class="form-control input-lg" /> </div>
+                        <div class="form-group">
+                            <label for="message" class="pull-left">message</label>
+                            <textarea name="message" placeholder="message" required rows="6" class="form-control input-lg"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="send" class="btn pull-left btn-contact" />
+                        </div>
+
+                    </form>
                 </div>
             </div>
-            <form class="contactform">
-                <div class="form-group">
-                    <label for="name" class="pull-left">name</label>
-                    <input type="text" name="name" required placeholder="name" class="form-control input-lg" />
-                </div>
-
-                <div class="form-group">
-                    <label for="email" class="pull-left">email</label>
-                    <input type="email" name="_replyto" required email placeholder="email@address.com" class="form-control input-lg" /> </div>
-
-                <input type="text" name="_gotcha" style="display:none" class="form-control" />
-
-                <div class="form-group">
-                    <label for="subject" class="pull-left">subject</label>
-                    <input type="text" name="subject" required placeholder="subject" class="form-control input-lg" /> </div>
-                <div class="form-group">
-                    <label for="message" class="pull-left">message</label>
-                    <textarea name="message" placeholder="message" required rows="6" class="form-control input-lg"></textarea>
-                </div>
-                <div class="form-group">
-                    <input type="submit" value="send" class="btn pull-left btn-contact" />
-                </div>
-
-            </form>
-        </div>
-    </div>
         </div>
 
         <div class='container footer'>
@@ -108,20 +109,21 @@
 
 
 
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-        <script src="../js/burger.js"></script>
-    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="../js/burger.js"></script>
+    <script src="../js/contact.js"></script>
+
     <script type="text/javascript">
-$(document).ready(function(){
-	$(".btn").click(function(){
-		$("#myModal").modal('show');
-	});
-});
-</script>
+        $(document).ready(function () {
+            $(".btn").click(function () {
+                $("#myModal").modal('show');
+            });
+        });
+    </script>
 
 
 
