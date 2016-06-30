@@ -12,22 +12,33 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <link href="../css/styles.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <link href='//fonts.googleapis.com/css?family=Cousine' rel='stylesheet' type='text/css'>
+
+
+
+
 </head>
 
 <body>
+
+
+
     <div class="container-menu">
         <ul style="list-style-type:none;">
-            <li><a href="../">news</a></li>
-            <li><a href='../shows/'>shows</a></li>
-            <li><a href="../music/">music</a></li>
+            <li class='active'><span>news</span></li>
+            <li><a href='shows/'>shows</a></li>
+            <li><a href="music/">music</a></li>
             <li><a href="//naturalanthem.bigcartel.com/">store</a></li>
-            <li><a href="../about/">about</a></li>
-            <li class='active'>contact</li>
+            <li><a href='about/'>about</a></li>
+            <li><a href="contact/">contact</a></li>
         </ul>
     </div>
+
+
+
+
 
     <div class="container-fluid header">
         <div class="nav">
@@ -43,49 +54,14 @@
 
     <div id='site-wrapper'>
         <div class="container main">
-            <div class="contact text-center">
-                <div class="form-group">
-
-                    <div class="submitstatus text-center">
-                        <!-- Hidden message to show if contact is successful. -->
-                        <div id="submit-success" class="collapse">
-                            message sent
-                            <br>
-                            <input class="btn btn-contact" value="send another?" id="send-another" />
-                        </div>
-
-                        <!-- Hidden message to show if user encounters errors. -->
-                        <div id="submit-error" class="collapse">
-                            error! try again later
-                        </div>
-                    </div>
-                    <form class="contactform">
-                        <div class="form-group">
-                            <label for="name" class="pull-left">name</label>
-                            <input type="text" name="name" required placeholder="name" class="form-control input-lg" />
-                        </div>
-
-                        <div class="form-group">
-                            <label for="email" class="pull-left">email</label>
-                            <input type="email" name="_replyto" required email placeholder="email@address.com" class="form-control input-lg" /> </div>
-
-                        <input type="text" name="_gotcha" style="display:none" class="form-control" />
-
-                        <div class="form-group">
-                            <label for="subject" class="pull-left">subject</label>
-                            <input type="text" name="subject" required placeholder="subject" class="form-control input-lg" /> </div>
-                        <div class="form-group">
-                            <label for="message" class="pull-left">message</label>
-                            <textarea name="message" placeholder="message" required rows="6" class="form-control input-lg"></textarea>
-                        </div>
-                        <div class="form-group">
-                            <input type="submit" value="send" class="btn pull-left btn-contact" />
-                        </div>
-
-                    </form>
+            <div class='container video-block'>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src='//www.youtube.com/embed/e7N9mu_6h0I' frameborder='0' allowfullscreen></iframe>
                 </div>
             </div>
         </div>
+
+
 
         <div class='container mail text-center'>
             <button type='button' class='btn btn-default yellow' id='subscribe'> give us yer email</button>
@@ -99,13 +75,6 @@
                 <li> <a href='//www.twitter.com/naturalanthem_'><i class='fa fa-twitter fa-2x'></i></a></li>
             </ul>
         </div>
-
-
-        <style type="text/css">
-            .bs-example {
-                margin: 20px;
-            }
-        </style>
 
         <!-- Subscribe Modal HTML -->
         <div id="myModal" class="modal fade">
@@ -126,11 +95,11 @@
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+    </script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    <script src="../js/menu.js"></script>
-    <script src="../js/contact.js"></script>
+    <script src="js/menu.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
             $("#subscribe").click(function () {
