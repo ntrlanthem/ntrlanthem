@@ -12,22 +12,33 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <link href="../css/styles.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <link href='//fonts.googleapis.com/css?family=Cousine' rel='stylesheet' type='text/css'>
+
+
+
+
 </head>
 
 <body>
+
+
+
     <div class="container-menu">
         <ul style="list-style-type:none;">
-            <li><a href="../">news</a></li>
-            <li class='active'>shows</li>
-            <li><a href="../music/">music</a></li>
+            <li class='active'><span>news</span></li>
+            <li><a href='shows/'>shows</a></li>
+            <li><a href="music/">music</a></li>
             <li><a href="//naturalanthem.bigcartel.com/">store</a></li>
-            <li><a href="../about/">about</a></li>
-            <li><a href='../contact/'>contact</a></li>
+            <li><a href='about/'>about</a></li>
+            <li><a href="contact/">contact</a></li>
         </ul>
     </div>
+
+
+
+
 
     <div class="container-fluid header">
         <div class="nav">
@@ -43,8 +54,14 @@
 
     <div id='site-wrapper'>
         <div class="container main">
-            <a href="http://www.songkick.com/artists/8418268" class="songkick-widget" data-theme="light" data-detect-style="true" data-background-color="transparent">upcoming shows</a>
+            <div class='container video-block'>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src='//www.youtube.com/embed/e7N9mu_6h0I' frameborder='0' allowfullscreen></iframe>
+                </div>
+            </div>
         </div>
+
+
 
         <div class='container mail text-center'>
             <button type='button' class='btn btn-default yellow' id='subscribe'> give us yer email</button>
@@ -58,13 +75,6 @@
                 <li> <a href='//www.twitter.com/naturalanthem_'><i class='fa fa-twitter fa-2x'></i></a></li>
             </ul>
         </div>
-
-
-        <style type="text/css">
-            .bs-example {
-                margin: 20px;
-            }
-        </style>
 
         <!-- Subscribe Modal HTML -->
         <div id="myModal" class="modal fade">
@@ -85,11 +95,11 @@
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+    </script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    <script src="../js/menu.js"></script>
-    <script src="//widget.songkick.com/widget.js"></script>
+    <script src="js/menu.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
             $("#subscribe").click(function () {
