@@ -306,61 +306,6 @@ body {
     margin-top: 20px;
 }
 .shop {
-    background: linear-gradient(184deg, #ffff00, #3a00ff, #ff0000, #ff00ef);
-    background-size: 800% 800%;
-    -webkit-animation: AnimationName 0s ease infinite;
-    -moz-animation: AnimationName 0s ease infinite;
-    -o-animation: AnimationName 0s ease infinite;
-    animation: AnimationName 0s ease infinite;
-    @-webkit-keyframes AnimationName {
-        0% {
-            background-position: 0% 32%
-        }
-        50% {
-            background-position: 100% 69%
-        }
-        100% {
-            background-position: 0% 32%
-        }
-    }
-    
-    @-moz-keyframes AnimationName {
-        0% {
-            background-position: 0% 32%
-        }
-        50% {
-            background-position: 100% 69%
-        }
-        100% {
-            background-position: 0% 32%
-        }
-    }
-    
-    @-o-keyframes AnimationName {
-        0% {
-            background-position: 0% 32%
-        }
-        50% {
-            background-position: 100% 69%
-        }
-        100% {
-            background-position: 0% 32%
-        }
-    }
-    
-    @keyframes AnimationName {
-        0% {
-            background-position: 0% 32%
-        }
-        50% {
-            background-position: 100% 69%
-        }
-        100% {
-            background-position: 0% 32%
-        }
-    }
-    /* background: black; */
-    
     color: yellow;
     padding: 10px 0;
     width: 80%;
