@@ -15,7 +15,16 @@
     <link href="../css/styles.css" rel="stylesheet">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <link href='//fonts.googleapis.com/css?family=Cousine' rel='stylesheet' type='text/css'>
-    <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <!-- bootstrap-select CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/css/bootstrap-select.min.css">
+
+    <!-- bootstrap-select JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js"></script>
+
+    <script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" id="snipcart" data-api-key="ZjBhZGM5OTktN2UxYS00YWI4LTljMDktMGVhNjQ3MmNhMWE5NjM2MDI3NDU3NTEwMjQ0MzY3"></script>
+
+    <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" type="text/css" rel="stylesheet" />
 </head>
 
 <body>
@@ -49,27 +58,44 @@
             </div>
             <div class='stuff'>
                 <div class='col-xs-6'>
-
-
+                    <span class='item'>t shirt</span>
+                    <span class='price'>- $20</span>
                     <img class='img-responsive' src="https://images.bigcartel.com/product_images/168523297/Naturalanthem15square.jpg?auto=format&fit=max&w=1000" />
 
                     <div class='pad-top'>
-                        <a href="#" class="snipcart-add-item black btn" data-item-id="1" data-item-name="t shirt" data-item-price="20.00" data-item-weight="20" data-item-url="https://naturalanthem.net/shop" data-item-description=" " data-item-custom2-name="size" data-item-custom2-options="XS|S|M|L|XL" data-item-image="https://images.bigcartel.com/product_images/168523297/Naturalanthem15square.jpg?auto=format&fit=max&w=1000"> t shirt </a>
+
+
+                        <select class='selectpicker size' id='shirt-size'>
+                            <option value="xs">xs</option>
+                            <option value="s">s</option>
+                            <option value="m">m</option>
+                            <option value="l">l</option>
+                            <option value="xl">xl</option>
+                        </select>
+
+                        <a href="#" class="snipcart-add-item black btn" data-item-id="1" data-item-name="t shirt" data-item-price="20.00" data-item-weight="20" data-item-url="https://naturalanthem.net/shop" data-item-description=" " data-item-custom2-name="size" data-item-custom2-options="XS|S|M|L|XL" data-item-image="https://images.bigcartel.com/product_images/168523297/Naturalanthem15square.jpg?auto=format&fit=max&w=1000"> add to cart </a>
                     </div>
                 </div>
                 <div class='col-xs-6'>
-
+                    <span class='item'>tank top</span>
+                    <span class='price'>- $20</span>
                     <img class='img-responsive' src="https://images.bigcartel.com/product_images/168523342/Naturalanthem17square.JPG?auto=format&fit=max&w=1000" />
 
                     <div class='pad-top'>
-                        <a href="#" class="snipcart-add-item black btn" data-item-id="2" data-item-name="tank" data-item-price="20.00" data-item-weight="20" data-item-url="https://naturalanthem.net/shop" data-item-description=" " data-item-custom2-name="size" data-item-custom2-options="S|M|L" data-item-image="https://images.bigcartel.com/product_images/168523342/Naturalanthem17square.JPG?auto=format&fit=max&w=1000"> tank top
+
+                        <select class='selectpicker size' id='tank-size'>
+                            <option value="s">s</option>
+                            <option value="m">m</option>
+                            <option value="l">l</option>
+                        </select>
+                        <a href="#" class="snipcart-add-item black btn" data-item-id="2" data-item-name="tank" data-item-price="20.00" data-item-weight="20" data-item-url="https://naturalanthem.net/shop" data-item-description=" " data-item-custom2-name="size" data-item-custom2-options="S|M|L" data-item-image="https://images.bigcartel.com/product_images/168523342/Naturalanthem17square.JPG?auto=format&fit=max&w=1000"> add to cart
                 </a>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class='container mail text-center'>
+        <div class='container mail text-center shop-footer'>
             <button type='button' class='btn btn-default yellow' id='subscribe'> give us yer email</button>
         </div>
 
@@ -106,13 +132,8 @@
         </div>
     </div>
 
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    <script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" data-api-key="ZjBhZGM5OTktN2UxYS00YWI4LTljMDktMGVhNjQ3MmNhMWE5NjM2MDI3NDU3NTEwMjQ0MzY3
-" id="snipcart"></script>
     <script src="../js/menu.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
