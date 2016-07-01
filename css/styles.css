@@ -244,3 +244,48 @@ body {
     outline: none;
     box-shadow: none
 }
+.circle {
+    position: relative;
+    display: block;
+    margin: 2em 0;
+    background-color: transparent;
+    color: #222;
+    text-align: center;
+    max-width: 300px;
+    max-height: 300px;
+}
+.circle:after {
+    display: block;
+    padding-bottom: 100%;
+    width: 100%;
+    height: 0;
+    border-radius: 50%;
+    background-color: #000;
+    content: "";
+}
+.circle__inner {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.circle__wrapper {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+.booking {
+    display: table-cell;
+    padding: 1em;
+    vertical-align: middle;
+    color: white;
+}
+.booking a {
+    color: yellow
+}
+.top {
+    margin: 0 auto;
+    padding-top: 30px;
+}
