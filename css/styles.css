@@ -65,6 +65,18 @@ body {
     border-style: none;
     color: yellow;
 }
+.black {
+    background: black;
+    border-style: none;
+    border-radius: 2px;
+    height: 32px;
+    color: yellow
+}
+.black:hover {
+    background: yellow;
+    border-style: none;
+    color: black;
+}
 .modal-header {
     border-bottom: none;
     text-align: center;
