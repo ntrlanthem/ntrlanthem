@@ -83,6 +83,7 @@ body {
 }
 .modal-body {
     padding: 0px;
+    height: 180px;
 }
 .modal-footer {
     border-top: none;
@@ -317,4 +318,10 @@ body {
 }
 .pad-top {
     margin-top: 10px;
+}
+.size {
+    max-width: 70px;
+}
+.shop-footer {
+    padding-top: 20px
 }
