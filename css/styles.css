@@ -319,7 +319,7 @@ body {
     margin-top: 10px;
 }
 .size {
-    max-width: 70px;
+    max-width: 60px;
 }
 .shop-footer {
     padding-top: 20px
@@ -351,9 +351,7 @@ body {
     flex-wrap: wrap;
     display: -webkit-flex;
     display: flex;
-    -webkit-flex-direction: row
-    /* works with row or column */
-    
+    -webkit-flex-direction: row;
     flex-direction: row;
     -webkit-align-items: center;
     align-items: center;
@@ -361,14 +359,12 @@ body {
     justify-content: center;
 }
 .product-card {
-    display: flex;
     flex-direction: column;
     margin: 10px;
     padding: 2%;
     flex: 1 16%;
     max-width: 400px;
     background-color: #fff;
-    /* box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.25); */
 }
 .product-image {
     width: 100%;
@@ -433,4 +429,16 @@ body {
 }
 .item {
     color: white;
+}
+.actions {
+    height: 100%;
+    width: 100%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default;
+    background: rgba(0, 0, 0, 0.05);
+    box-shadow: 1px rgba(0, 0, 0, 0.05);
+    padding: 10px
 }
