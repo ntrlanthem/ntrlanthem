@@ -423,20 +423,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    visibility: none;
 }
 .product-image:hover .overlay {
     opacity: 1;
     visibility: visible;
 }
 .product-image:focus .overlay {
-    opacity: 1;
-    visibility: visible;
-}
-.product-card:focus .overlay {
-    opacity: 1;
-    visibility: visible;
-}
-.product-image .hover_effect {
     opacity: 1;
     visibility: visible;
 }
