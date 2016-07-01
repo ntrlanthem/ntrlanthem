@@ -448,3 +448,32 @@ body {
     box-shadow: 1px rgba(0, 0, 0, 0.05);
     padding: 10px
 }
+.product-info {
+    display: none;
+}
+@media ( max-width: 600px) {
+    .product-info {
+        display: block;
+        width: 100%;
+        background: rgba(0, 0, 0, .05)
+    }
+    
+    .product-image:hover .overlay {
+        opacity: 0;
+        visibility: hidden;
+    }
+    
+    .product-image:focus .overlay {
+        opacity: 0;
+        visibility: hidden;
+    }
+    
+    .product-info h2 {
+        font-size: 14px;
+        font-weight: 800
+    }
+    
+    .product-info p {
+        font-size: 12px;
+    }
+}
