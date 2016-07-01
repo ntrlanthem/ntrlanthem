@@ -304,3 +304,17 @@ body {
 #submit-success {
     margin-top: 20px;
 }
+.shop {
+    background: black;
+    color: yellow;
+    padding: 10px 0;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 2px
+}
+.header {
+    margin-bottom: 10px
+}
+.pad-top {
+    margin-top: 10px;
+}
