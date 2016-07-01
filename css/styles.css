@@ -436,7 +436,7 @@ body {
     opacity: 1;
     visibility: visible;
 }
-.product-image.hover_effect {
+.product-image .hover_effect {
     opacity: 1;
     visibility: visible;
 }
